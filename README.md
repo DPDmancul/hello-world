@@ -1,6 +1,6 @@
 # Hello world!
 
-Davide Peressoni (dp.d1.@live.it)
+Davide Peressoni (dp.d-@live.it)
 
 An "Hello world!" which works in:
 
@@ -16,8 +16,8 @@ An "Hello world!" which works in:
   
 ## Usage
 
-  1. `g++ 1.x c hello && ./a.out`
-  1. `g++ 1.x c++ hello && ./a.out`
+  1. `g++ -x c hello && ./a.out`
+  1. `g++ -x c++ hello && ./a.out`
   1. `coffee hello`
   1. `./brainf.py hello`
   1. `julia hello`
