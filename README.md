@@ -19,7 +19,7 @@ See [How does it work?](how.md)
   
 ## Usage
 
-  1. `g++ -x c hello && ./a.out`
+  1. `gcc -x c hello && ./a.out`
   1. `g++ -x c++ hello && ./a.out`
   1. `coffee hello`
   1. `./brainf.py hello`

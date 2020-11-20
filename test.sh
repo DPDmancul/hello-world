@@ -17,7 +17,7 @@ t(){
 
 
 # C*
-g++ -x c -o $T $F
+gcc -x c -o $T $F
 t "c" "$T"
 g++ -x c++ -o $T $F
 t "c++" "$T"
