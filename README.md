@@ -1,30 +1,30 @@
 # Hello world!
 
-Davide Peressoni (dp.d-@live.it)
+Davide Peressoni (dp.d1.@live.it)
 
 An "Hello world!" which works in:
 
   1. C
-  - C++
-  - CoffeeScript
-  - Brainf***
-  - Julia
-  - Perl
-  - PHP
-  - Python
-  - *sh (sh, bash, zsh, ...)
+  1. C++
+  1. CoffeeScript
+  1. Brainf***
+  1. Julia
+  1. Perl
+  1. PHP
+  1. Python
+  1. *sh (sh, bash, zsh, ...)
   
 ## Usage
 
-  1. `g++ -x c hello && ./a.out`
-  - `g++ -x c++ hello && ./a.out`
-  - `coffee hello`
-  - `./brainf.py hello`
-  - `julia hello`
-  - `perl hello`
-  - `php hello`
-  - `python3 hello`
-  - `sh hello`, `bash hello`, `zsh hello`
+  1. `g++ 1.x c hello && ./a.out`
+  1. `g++ 1.x c++ hello && ./a.out`
+  1. `coffee hello`
+  1. `./brainf.py hello`
+  1. `julia hello`
+  1. `perl hello`
+  1. `php hello`
+  1. `python3 hello`
+  1. `sh hello`, `bash hello`, `zsh hello`
 
 ## Automatic test
 
