@@ -1,0 +1,39 @@
+#if 0 //<?php echo "\r"; /*
+###
+#=
+q=0
+""":"
+###
+#*/
+###
+echo "Hello world!";
+exit
+("\n\r"); ?>
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+#endif
+
+
+#include<stdio.h>
+
+#define print(X) printf(X"\n")
+
+#if 0
+# =; q^
+=#
+println("Hello world!") #
+#=
+#endif
+int main(){
+//"""
+
+#pragma ^;
+
+print("Hello world!");
+  
+#pragma \
+q^0
+#pragma \
+"""#"
+  return 0;
+}
+//""" # =# ^; ### console.log "Hello world!" #]
