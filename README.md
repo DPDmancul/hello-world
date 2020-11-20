@@ -14,6 +14,9 @@ An "Hello world!" which works in:
   1. Python
   1. *sh (sh, bash, zsh, ...)
   
+## Explanation
+See [How does it work?](how.md)
+  
 ## Usage
 
   1. `g++ -x c hello && ./a.out`
