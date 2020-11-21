@@ -146,3 +146,292 @@ Note that:
 #endif
 ```
 Closes the preprocessor comment for C and C++.
+
+## How is the code viewed for ...
+
+### C and C++
+```c
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+#endif
+```
+### CoffeeScript
+```coffee
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+#endif
+```
+
+### Brainf***
+```brainfuck
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+#endif
+```
+### Julia
+```julia
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+#endif
+```
+### Perl
+```perl
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+#endif
+```
+### PHP
+```php
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+```
+### Python
+```py
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+#endif
+```
+### *sh
+```sh
+#if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+```
