@@ -1,4 +1,4 @@
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -36,4 +36,6 @@ println("Hello world!")
 print("Hello world!");
 
 # =### console.log "Hello world!" #]
-#endif
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}

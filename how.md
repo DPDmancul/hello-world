@@ -8,9 +8,10 @@ Davide Peressoni (dp.d-@live.it)
 
 
 ```php
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 ```
 - `#` comments out the line for CoffeeScript, Julia, Perl, Python and *sh.
+- `/*/**/` starts a comment for C, C++ and Rust. It is also closed for C and C++, but not for Rust.
 - `#if 0` starts a "preprocessor comment" for C and C++ and the `//` discards the remaining of the line for them.
 - `<?php` starts the PHP interpreter and `echo "\r";` makes the upcoming `echo` to override what was written before the begin of the PHP section.
 - `/*` comments out the following lines for PHP.
@@ -142,16 +143,35 @@ Note that:
   prints "Hello world!" for CoffeeScript
 - `#` comments the remain of the line for CoffeeScript.
 - `]` closes the loop for Brainf***.
-```c
-#endif
+
+```rust
+#*/[doc=r"\"]#[doc="
 ```
-Closes the preprocessor comment for C and C++.
+- `#` comments the remain of the line for Python, Perl, Julia and CoffeeScript.
+- `*/` closes the block comment, opened on first line, for Rust.
+- `#[doc=r"\"]` is a doc comment for Rust, but since C and C++ don't support raw literal strings the string is not closed for them and it will be closed by the next doc comment.
+- `#[doc="` starts another doc comment for Rust which will be closed later and closes the string for C and C++.
+
+  The last two points are needed to comment out `#endif` for Rust and make C and C++ not complain for unclosed strings.
+
+```c
+#endif //"] fn main(){println!("Hello world!")}
+```
+- `#` comments the remain of the line for Python, Perl, Julia and CoffeeScript.
+- `#endif` Closes the preprocessor comment for C and C++.
+- `//` comments out the rest of the line for C and C++.
+- `"]` closes the doc comment for Rust.
+- ```rust
+  fn main(){println!("Hello world!")}
+  ```
+  prints "Hello world!" for Rust.
+
 
 ## How is the code viewed for ...
 
 ### C and C++
 ```c
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -189,11 +209,14 @@ println("Hello world!")
 print("Hello world!");
 
 # =### console.log "Hello world!" #]
-#endif
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}
+
 ```
 ### CoffeeScript
 ```coffee
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -231,7 +254,9 @@ println("Hello world!")
 print("Hello world!");
 
 # =### console.log "Hello world!" #]
-#endif
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}
 ```
 
 ### Brainf***
@@ -278,7 +303,7 @@ print("Hello world!");
 ```
 ### Julia
 ```julia
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -316,11 +341,13 @@ println("Hello world!")
 print("Hello world!");
 
 # =### console.log "Hello world!" #]
-#endif
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}
 ```
 ### Perl
 ```perl
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -358,11 +385,13 @@ println("Hello world!")
 print("Hello world!");
 
 # =### console.log "Hello world!" #]
-#endif
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}
 ```
 ### PHP
 ```php
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -379,7 +408,7 @@ exit
 ```
 ### Python
 ```py
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=
@@ -417,11 +446,58 @@ println("Hello world!")
 print("Hello world!");
 
 # =### console.log "Hello world!" #]
-#endif
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}
 ```
+### Rust
+```rust
+#/*/**/if 0 //<?php echo "\r"; /*
+
+###
+#=
+q=0
+""":"
+
+###
+#*/
+###
+
+echo "Hello world!";
+exit
+("\n\r"); ?>
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
+
+#endif
+
+#include<stdio.h>
+
+int main(){
+  printf("Hello world!\n");
+  return 0;
+}
+
+#if 0
+
+=; q^
+=#
+println("Hello world!")
+#=
+
+//"""
+# ^;
+print("Hello world!");
+
+# =### console.log "Hello world!" #]
+
+#*/[doc=r"\"]#[doc="
+#endif //"] fn main(){println!("Hello world!")}
+```
+
 ### *sh
 ```sh
-#if 0 //<?php echo "\r"; /*
+#/*/**/if 0 //<?php echo "\r"; /*
 
 ###
 #=

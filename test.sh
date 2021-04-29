@@ -22,6 +22,10 @@ t "c" "$T"
 g++ -x c++ -o $T $F
 t "c++" "$T"
 
+# Rust
+rustc -o $T $F
+t "rust" "$T"
+
 # COFFEESCRIPT
 t "coffeescript" "coffee $F"
 

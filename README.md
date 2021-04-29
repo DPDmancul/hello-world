@@ -12,6 +12,7 @@ An "Hello world!" which works in:
   1. Perl
   1. PHP
   1. Python
+  1. Rust
   1. *sh (sh, bash, zsh, ...)
   
 ## Explanation
@@ -27,6 +28,7 @@ See [How does it work?](how.md)
   1. `perl hello`
   1. `php hello`
   1. `python3 hello`
+  1. `rustc hello -o hello.out && ./hello.out`
   1. `sh hello`, `bash hello`, `zsh hello`
 
 ## Automatic test
