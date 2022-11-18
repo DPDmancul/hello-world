@@ -1,41 +1,55 @@
-#/*/**/if 0 //<?php echo "\r"; /*
-
-###
-#=
-q=0
-""":"
-
-###
-#*/
-###
-
-echo "Hello world!";
+ #/*/**/if 0 //<?php echo "\r"; /*
+ #[
+ ###
+ #`{{
+ #=
+q="""" ":" "=; q^"
+true || \
+=begin
+ ###
+ #*/
+ ###]#
+echo "Hello world!"; ##[]
 exit
+/* :' 
+ ###
+ #*/
+ ###
 ("\n\r"); ?>
-
 ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<++++++++.--------.+++.------.--------.>+.>..>[
-
-#endif
-
-#include<stdio.h>
+ #endif
+ #include<stdio.h>
 
 int main(){
   printf("Hello world!\n");
   return 0;
 }
-
-#if 0
-
-=; q^
+ #if 0
+ ###
+ console.log "Hello world!"
+ ###
 =#
 println("Hello world!")
-#=
-
-//"""
-# ^;
+ #=
+\begin{code}%
+open import Agda.Builtin.IO
+open import Agda.Builtin.String
+data Unit : Set where
+  tt : Unit
+{-# COMPILE GHC Unit = data () (()) #-}
+postulate
+  putStrLn : String -> IO Unit
+{-# FOREIGN GHC import qualified Data.Text as T #-}
+{-# COMPILE GHC putStrLn = putStrLn . T.unpack #-}
+\end{code}%
+\begin{code}
+main = putStrLn "Hello world!"
+\end{code}
+=end
+" """
+ #}}
+ # ^;
 print("Hello world!");
-
-# =### console.log "Hello world!" #]
-
-#*/[doc=r"\"]#[doc="
-#endif //"] fn main(){println!("Hello world!")}
+ # =###
+ #*/[doc=r"\"] #[doc="
+ #endif //"] fn main(){println!("Hello world!")} // []#]## #'
